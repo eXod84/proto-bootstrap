@@ -1,5 +1,11 @@
 [
   {
+    "label": "Home",
+    "short_label": "Home",
+    "icon": "home",
+    "url": "/"
+  },
+  {
     "label": "SEO",
     "short_label": "SEO",
     "icon": "seo",
@@ -136,6 +142,9 @@
         ]
       }
     ]
+  },
+  {
+    "divider": true
   },
   {
     "label": "Traffic & Market (.Trends)",
@@ -515,55 +524,76 @@
     ]
   },
   {
-    "label": "PR",
-    "short_label": "PR",
-    "icon": "market",
-    "url": "/pr-toolkit/",
+    "divider": true
+  },
+  {
+    "label": "Reports",
+    "short_label": "Reports",
+    "icon": "reports",
+    "url": "/reports/",
     "items": [
       {
         "items": [
           {
-            "label": "Get started",
-            "url": "/pr-toolkit/"
+            "label": "My Reports",
+            "url": "/reports/"
           }
         ]
       },
       {
-        "label": "Media Database",
+        "label": "Top Templates",
         "items": [
           {
-            "label": "Media Lists",
-            "url": "/pr-toolkit/media-lists/"
+            "label": "Google Analytics 4",
+            "url": "/reports/google-analytics-4/"
+          },
+          {
+            "label": "Google Search Console",
+            "url": "/reports/google-search-console/"
+          },
+          {
+            "label": "Monthly SEO",
+            "url": "/reports/monthly-seo/"
           }
         ]
       },
       {
-        "label": "Writer",
         "items": [
           {
-            "label": "Writer",
-            "url": "/pr-toolkit/emails/landing"
+            "label": "Create Report",
+            "url": "/reports/create/"
           },
           {
-            "label": "Emails List",
-            "url": "/pr-toolkit/emails"
+            "label": "Templates",
+            "url": "/reports/templates/"
           },
           {
-            "label": "Domain Authentication",
+            "label": "Themes",
             "url": "/pr-toolkit/settings/domains/"
-          }
-        ]
-      },
-      {
-        "label": "Media Monitoring",
-        "items": [
-          {
-            "label": "Media Monitoring",
-            "url": "/pr-toolkit/media-monitoring/"
           },
           {
-            "label": "Email notifications",
-            "url": "/pr-toolkit/media-monitoring/emails/"
+            "label": "About My Reports",
+            "url": "/reports/about/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "App Center",
+    "short_label": "App Center",
+    "icon": "apps",
+    "url": "/app-center/",
+    "items": [
+      {
+        "items": [
+          {
+            "label": "Store",
+            "url": "/app-center/"
+          },
+          {
+            "label": "My Apps",
+            "url": "/app-center/my-apps/"
           }
         ]
       }
