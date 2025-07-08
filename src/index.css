@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base, Inter), -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary-neutral, #ffffff);
+  color: var(--text-primary, #191b23);
+}
+
+/* Custom CSS variables for design tokens */
+:root {
+  /* Colors - Gray scale */
+  --gray-white: #ffffff;
+  --gray-50: #f4f5f9;
+  --gray-100: #e0e1e9;
+  --gray-200: #c4c7cf;
+  --gray-300: #a9abb6;
+  --gray-400: #8a8e9b;
+  --gray-500: #6c6e79;
+  --gray-600: #484a54;
+  --gray-700: #2b2e38;
+  --gray-800: #191b23;
+
+  /* Colors - Blue scale */
+  --blue-50: #e9f7ff;
+  --blue-100: #c4e5fe;
+  --blue-200: #8ecdff;
+  --blue-300: #2bb3ff;
+  --blue-400: #008ff8;
+  --blue-500: #006dca;
+  --blue-600: #044792;
+  --blue-700: #002b5f;
+  --blue-800: #001b3d;
+
+  /* Colors - Green scale */
+  --green-50: #dbfee8;
+  --green-100: #9ef2c9;
+  --green-200: #59ddaa;
+  --green-300: #00c192;
+  --green-400: #009f81;
+  --green-500: #007c65;
+  --green-600: #055345;
+  --green-700: #00342d;
+  --green-800: #00201e;
+
+  /* Colors - Red scale */
+  --red-50: #fff0f7;
+  --red-100: #ffd7df;
+  --red-200: #ffaeb5;
+  --red-300: #ff8786;
+  --red-400: #ff4953;
+  --red-500: #d1002f;
+  --red-600: #8e0016;
+  --red-700: #58000a;
+  --red-800: #410101;
+
+  /* Colors - Orange scale */
+  --orange-50: #fff3d9;
+  --orange-100: #ffdca2;
+  --orange-200: #ffb26e;
+  --orange-300: #ff8c43;
+  --orange-400: #ff642d;
+  --orange-500: #c33909;
+  --orange-600: #8b1500;
+  --orange-700: #551200;
+  --orange-800: #351000;
+
+  /* Colors - Violet scale */
+  --violet-50: #f9f2ff;
+  --violet-100: #edd9ff;
+  --violet-200: #dcb8ff;
+  --violet-300: #c695ff;
+  --violet-400: #ab6cfe;
+  --violet-500: #8649e1;
+  --violet-600: #5925ab;
+  --violet-700: #421983;
+  --violet-800: #220358;
+
+  /* Colors - Violet dusty scale */
+  --violet-dusty-50: #f5f4ff;
+  --violet-dusty-100: #e2ddff;
+  --violet-dusty-200: #bcb1e9;
+  --violet-dusty-300: #a79cd6;
+  --violet-dusty-400: #9083c5;
+  --violet-dusty-500: #6d619f;
+  --violet-dusty-600: #4d407e;
+  --violet-dusty-700: #382e5e;
+  --violet-dusty-800: #1d113e;
+
+  /* Semantic colors */
+  --bg-primary-neutral: #ffffff;
+  --bg-primary-neutral-hover: #f4f5f9;
+  --bg-primary-neutral-active: #e0e1e9;
+  --bg-secondary-neutral: #f4f5f9;
+  --bg-secondary-neutral-hover: #e0e1e9;
+  --bg-primary-info: #008ff8;
+  --bg-primary-success: #009f81;
+  --bg-primary-critical: #ff4953;
+  --bg-primary-warning: #ff642d;
+  --bg-secondary-info: #e9f7ff;
+  --bg-secondary-success: #dbfee8;
+  --bg-secondary-critical: #fff0f7;
+  --bg-secondary-warning: #fff3d9;
+  --text-primary: #191b23;
+  --text-secondary: #6c6e79;
+  --text-placeholder: #8a8e9b;
+  --text-link: #006dca;
+  --text-link-hover: #044792;
+  --text-success: #007c65;
+  --text-critical: #d1002f;
+  --border-primary: #c4c7cf;
+  --border-secondary: #e0e1e9;
+  --border-info: #8ecdff;
+  --border-success: #59ddaa;
+  --border-critical: #ffaeb5;
+  --border-warning: #ffb26e;
+
+  /* Typography */
+  --font-family-base: Inter;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-size-100: 12px;
+  --font-size-200: 14px;
+  --font-size-300: 16px;
+  --font-size-400: 20px;
+  --font-size-500: 24px;
+  --font-size-600: 32px;
+  --font-size-700: 36px;
+  --font-size-800: 48px;
+  --line-height-100: 133%;
+  --line-height-200: 142%;
+  --line-height-300: 150%;
+  --line-height-400: 120%;
+  --line-height-500: 117%;
+  --line-height-600: 125%;
+  --line-height-700: 110%;
+  --line-height-800: 117%;
+
+  /* Spacing */
+  --scale-base: 4px;
+  --spacing-05x: 2px;
+  --spacing-1x: 4px;
+  --spacing-2x: 8px;
+  --spacing-3x: 12px;
+  --spacing-4x: 16px;
+  --spacing-5x: 20px;
+  --spacing-6x: 24px;
+  --spacing-8x: 32px;
+  --spacing-10x: 40px;
+  --spacing-14x: 56px;
+  --spacing-20x: 80px;
+
+  /* Border radius */
+  --radius-extra-small: 2px;
+  --radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-large: 12px;
+  --radius-extra-large: 24px;
+
+  /* Z-index */
+  --z-overlay: 500;
+  --z-popper: 700;
+  --z-dropdown: 750;
+  --z-tooltip: 800;
+  --z-modal: 900;
+  --z-notification: 999;
+
+  /* Opacity */
+  --opacity-disabled: 0.3;
+  --opacity-secondary: 0.8;
+  --opacity-subtle: 0.5;
+}
