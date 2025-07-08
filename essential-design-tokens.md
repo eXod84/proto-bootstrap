@@ -1,5 +1,53 @@
 # Essential Design Tokens
 
+## 🤖 Instructions for LLMs
+
+When generating UI code, use these design tokens following these guidelines:
+
+### Usage Principles:
+- **Always use semantic tokens first** (e.g., `text-primary` instead of `gray-800`)
+- **Use base palette tokens** only when semantic tokens don't exist for your use case
+- **Follow the naming convention**: `category-variant-state` (e.g., `control-primary-info-hover`)
+- **Reference token names in comments** to maintain consistency across generated code
+
+### Common Patterns:
+```css
+/* Backgrounds */
+background: var(--bg-primary-neutral);           /* Main content areas */
+background: var(--bg-secondary-neutral);        /* Cards, panels */
+background: var(--control-primary-info);        /* Primary buttons */
+
+/* Text */
+color: var(--text-primary);                     /* Headings, important text */
+color: var(--text-secondary);                   /* Body text, labels */
+color: var(--text-link);                        /* Links */
+
+/* Borders */
+border: 1px solid var(--border-primary);        /* Default borders */
+border-radius: var(--radius-medium);            /* Standard components */
+
+/* Spacing */
+padding: var(--spacing-4x);                     /* Component padding */
+margin: var(--spacing-3x);                      /* Element margins */
+gap: var(--spacing-2x);                         /* Flexbox/grid gaps */
+```
+
+### State Management:
+- Use `-hover` suffixed tokens for hover states
+- Use `-active` suffixed tokens for active/pressed states
+- Use `-focus` shadows for keyboard navigation
+- Use semantic colors (`success`, `critical`, `warning`, `info`) for status indication
+
+### Typography:
+- Use predefined typography presets when possible (e.g., `heading-h3`, `body-text`)
+- Combine individual font properties only when presets don't fit
+- Always pair font-size with its corresponding line-height
+
+### Responsive Design:
+- Use breakpoint tokens for media queries
+- Apply spacing tokens consistently across screen sizes
+- Scale control sizes appropriately for touch interfaces
+
 ## Colors - Base Palette
 
 | name | value | description |
