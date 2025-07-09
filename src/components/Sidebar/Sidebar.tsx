@@ -36,6 +36,7 @@ const Sidebar: React.FC = () => {
             url={item.url}
             isActive={activeUrl === item.url}
             onClick={() => handleButtonClick(item.url)}
+            items={item.items}
           />
         );
       }

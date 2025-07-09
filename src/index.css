@@ -13,6 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-primary-neutral, #ffffff);
   color: var(--text-primary, #191b23);
+  font-size: 14px;
 }
 
 /* Custom CSS variables for design tokens */
