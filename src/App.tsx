@@ -1,6 +1,6 @@
-import { ReportLayout } from "./Layouts/Report";
-import Header from "./components/Header/Header";
-import Sidebar from "./components/Sidebar/Sidebar";
+import { ReportLayout } from "./lib/Report";
+import Header from "./lib/Header/Header";
+import Sidebar from "./lib/Sidebar/Sidebar";
 import { Report } from "./pages/Report";
 
 function App() {

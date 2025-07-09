@@ -1,7 +1,9 @@
+import { ReportHeader } from "../components/ReportHeader";
+
 const Report = () => {
   return (
     <div>
-      <h1 className="text-2xl font-bold">Put content here</h1>
+      <ReportHeader title="Put content here" />
     </div>
   );
 };
